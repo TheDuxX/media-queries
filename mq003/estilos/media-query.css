@@ -10,3 +10,36 @@ Desktop: 992px até 1200px
 Grandes telas: acima de 1200px
 */
 
+@media print {
+    body {
+        font-family: 'Courier New', Courier, monospace;
+    } /* Desnecessário */   
+
+    #burguer {
+        display: none;
+
+    }
+
+    menu {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    #burguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+    main {
+        width: 770px;
+    }
+}
